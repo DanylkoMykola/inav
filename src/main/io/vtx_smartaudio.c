@@ -124,8 +124,8 @@ saPowerTable_t saPowerTable[VTX_SMARTAUDIO_MAX_POWER_COUNT] = {
     { 250,  16 },
     { 500,  25 },
     { 1000,  40 },
-    { 2000,  80 } // Placeholder
-    { 3000,  120 } // Placeholder
+    { 2000,  80 }, // Placeholder
+    { 3000,  120 }, // Placeholder
 };
 
 // Last received device ('hard') states

@@ -25,9 +25,9 @@
 #include "platform.h"
 #include "build/debug.h"
 
-#define VTX_STRING_5G8_BAND_COUNT  5
+#define VTX_STRING_5G8_BAND_COUNT  10
 #define VTX_STRING_5G8_CHAN_COUNT  8
-#define VTX_STRING_5G8_POWER_COUNT 5
+#define VTX_STRING_5G8_POWER_COUNT 6
 
 #define VTX_STRING_1G3_BAND_COUNT  2
 #define VTX_STRING_1G3_CHAN_COUNT  8
