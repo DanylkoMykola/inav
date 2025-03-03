@@ -53,7 +53,7 @@ const char * const vtx58BandNames[VTX_STRING_5G8_BAND_COUNT + 1] = {
     "X",
 };
 
-const char vtx58BandLetter[VTX_STRING_5G8_BAND_COUNT + 1] = "-ABEFRPLUOX";
+const char vtx58BandLetter[VTX_STRING_5G8_BAND_COUNT + 1] = "-ABEFLX";
 
 const char * const vtx58ChannelNames[VTX_STRING_5G8_CHAN_COUNT + 1] = {
     "-", "1", "2", "3", "4", "5", "6", "7", "8",
