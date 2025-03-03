@@ -120,12 +120,11 @@ smartAudioStat_t saStat = {
 
 // Fill table with standard values for SA 1.0 and 2.0
 saPowerTable_t saPowerTable[VTX_SMARTAUDIO_MAX_POWER_COUNT] = {
-    {  25,   7 },
-    { 250,  16 },
-    { 500,  25 },
-    { 1000,  40 },
-    { 2000,  80 }, // Placeholder
-    { 3000,  120 }, // Placeholder
+    {  200,   7 },
+    { 400,  16 },
+    { 800,  25 },
+    { 1600,  40 },
+    { 1600,  80 }, // Placeholder
 };
 
 // Last received device ('hard') states

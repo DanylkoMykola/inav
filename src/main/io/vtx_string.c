@@ -25,7 +25,7 @@
 #include "platform.h"
 #include "build/debug.h"
 
-#define VTX_STRING_5G8_BAND_COUNT  10
+#define VTX_STRING_5G8_BAND_COUNT  6
 #define VTX_STRING_5G8_CHAN_COUNT  8
 #define VTX_STRING_5G8_POWER_COUNT 6
 
@@ -39,12 +39,9 @@ const uint16_t vtx58frequencyTable[VTX_STRING_5G8_BAND_COUNT][VTX_STRING_5G8_CHA
     { 5733, 5752, 5771, 5790, 5809, 5828, 5847, 5866 }, // B
     { 5705, 5685, 5665, 5645, 5885, 5905, 5925, 5945 }, // E
     { 5740, 5760, 5780, 5800, 5820, 5840, 5860, 5880 }, // F
-    { 5658, 5695, 5732, 5769, 5806, 5843, 5880, 5917 }, // R
-    {5653, 5693, 5733, 5773, 5813, 5853, 5893, 5933},
-    {5333, 5373, 5413, 5453, 5493, 5533, 5573, 5613},
-    {5325, 5348, 5366, 5384, 5402, 5420, 5438, 5456},
-    {5865, 5845, 5825, 5805, 5785, 5765, 5745, 5725},
-    {5733, 5752, 5771, 5790, 5809, 5828, 5847, 5866},};
+    {5362, 5399, 5436, 5473, 5510, 5547, 5584, 5621},
+    {4990, 5020, 5050, 5080, 5110, 5140, 5170, 5200},
+    };
 
 const char * const vtx58BandNames[VTX_STRING_5G8_BAND_COUNT + 1] = {
     "-",
@@ -52,11 +49,7 @@ const char * const vtx58BandNames[VTX_STRING_5G8_BAND_COUNT + 1] = {
     "B",
     "E",
     "F",
-    "R",
-    "P",
     "L",
-    "U",
-    "O",
     "X",
 };
 
@@ -67,7 +60,7 @@ const char * const vtx58ChannelNames[VTX_STRING_5G8_CHAN_COUNT + 1] = {
 };
 
 const char * const vtx58DefaultPowerNames[VTX_STRING_5G8_POWER_COUNT + 1] = {
-    "---", "PL1", "PL2", "PL3", "PL4", "PL5", "PL6",
+    "---", "PL1", "PL2", "PL3", "PL4", "PL5",
 };
 
 const uint16_t vtx1G3frequencyTable[VTX_STRING_1G3_BAND_COUNT][VTX_STRING_1G3_CHAN_COUNT] =
