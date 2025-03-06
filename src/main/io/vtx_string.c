@@ -27,7 +27,7 @@
 
 #define VTX_STRING_5G8_BAND_COUNT  10
 #define VTX_STRING_5G8_CHAN_COUNT  8
-#define VTX_STRING_5G8_POWER_COUNT 6
+#define VTX_STRING_5G8_POWER_COUNT 5
 
 #define VTX_STRING_1G3_BAND_COUNT  2
 #define VTX_STRING_1G3_CHAN_COUNT  8
@@ -40,11 +40,11 @@ const uint16_t vtx58frequencyTable[VTX_STRING_5G8_BAND_COUNT][VTX_STRING_5G8_CHA
     { 5705, 5685, 5665, 5645, 5885, 5905, 5925, 5945 }, // E
     { 5740, 5760, 5780, 5800, 5820, 5840, 5860, 5880 }, // F
     { 5658, 5695, 5732, 5769, 5806, 5843, 5880, 5917 }, // R
-    {5653, 5693, 5733, 5773, 5813, 5853, 5893, 5933},
-    {5333, 5373, 5413, 5453, 5493, 5533, 5573, 5613},
-    {5325, 5348, 5366, 5384, 5402, 5420, 5438, 5456},
-    {5865, 5845, 5825, 5805, 5785, 5765, 5745, 5725},
-    {5733, 5752, 5771, 5790, 5809, 5828, 5847, 5866},};
+    {5653, 5693, 5733, 5773, 5813, 5853, 5893, 5933},   // H
+    {5333, 5373, 5413, 5453, 5493, 5533, 5573, 5613},   // L
+    {5325, 5348, 5366, 5384, 5402, 5420, 5438, 5456},   // U    
+    {5474, 5492, 5510, 5528, 5546, 5564, 5582, 5600},   // O
+    {4990, 5020, 5050, 5080, 5110, 5140, 5170, 5200},}; // X
 
 const char * const vtx58BandNames[VTX_STRING_5G8_BAND_COUNT + 1] = {
     "-",
@@ -53,7 +53,7 @@ const char * const vtx58BandNames[VTX_STRING_5G8_BAND_COUNT + 1] = {
     "E",
     "F",
     "R",
-    "P",
+    "H",
     "L",
     "U",
     "O",
@@ -67,7 +67,7 @@ const char * const vtx58ChannelNames[VTX_STRING_5G8_CHAN_COUNT + 1] = {
 };
 
 const char * const vtx58DefaultPowerNames[VTX_STRING_5G8_POWER_COUNT + 1] = {
-    "---", "PL1", "PL2", "PL3", "PL4", "PL5", "PL6",
+    "---", "PL1", "PL2", "PL3", "PL4", "PL5",
 };
 
 const uint16_t vtx1G3frequencyTable[VTX_STRING_1G3_BAND_COUNT][VTX_STRING_1G3_CHAN_COUNT] =
@@ -99,7 +99,7 @@ bool vtx58_Freq2Bandchan(uint16_t freq, uint8_t *pBand, uint8_t *pChannel)
 
     // Use reverse lookup order so that 5880Mhz
     // get Raceband 7 instead of Fatshark 8.
-    for (band = VTX_STRING_5G8_BAND_COUNT ; band >= 0 ; band--) {
+    for (band = VTX_STRING_5G8_BAND_COUNT - 1; band >= 0 ; band--) {
         for (channel = 0 ; channel < 8 ; channel++) {
             if (vtx58frequencyTable[band][channel] == freq) {
                 *pBand = band + 1;
