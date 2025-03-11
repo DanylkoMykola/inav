@@ -414,9 +414,9 @@ static void impl_SetBandAndChannel(vtxDevice_t * vtxDevice, uint8_t band, uint8_
         newFreqMhz = vtx1G3_Bandchan2Freq(band, channel);
     }
 
-    if (newFreqMhz < vtxState.capabilities.freqMin || newFreqMhz > vtxState.capabilities.freqMax) {
-        return;
-    }
+    //if (newFreqMhz < vtxState.capabilities.freqMin || newFreqMhz > vtxState.capabilities.freqMax) {
+       // return;
+    //}
 
     // Cache band and channel
     vtxState.request.band = band;
