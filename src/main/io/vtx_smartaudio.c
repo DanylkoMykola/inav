@@ -62,7 +62,7 @@ static serialPort_t *smartAudioSerialPort = NULL;
 
 uint8_t saPowerCount = VTX_SMARTAUDIO_DEFAULT_POWER_COUNT;
 const char * saPowerNames[VTX_SMARTAUDIO_MAX_POWER_COUNT + 1] = {
-    "----", "25  ", "250 ", "500 ", "1000", "2000", "3000"
+    "----", "25  ", "250 ", "500 ", "1W  ", "2W  ", "3W  "
 };
 
 // Save powerlevels reported from SA 2.1 devices here
@@ -121,11 +121,13 @@ smartAudioStat_t saStat = {
 // Fill table with standard values for SA 1.0 and 2.0
 saPowerTable_t saPowerTable[VTX_SMARTAUDIO_MAX_POWER_COUNT] = {
     {  25,   7 },
-    { 250,  16 },
+    { 200,  16 },
     { 500,  25 },
-    { 1000,  40 },
-    { 2000,  80 }, // Placeholder
-    { 3000,  120 }, // Placeholder
+    { 800,  40 },
+    {   0,   0 }, // Placeholders
+    {   0,   0 },
+    {   0,   0 },
+    {   0,   0 }
 };
 
 // Last received device ('hard') states
