@@ -20,7 +20,7 @@
 #include "common/time.h"
 
 #define VTX_SETTINGS_MIN_BAND       1
-#define VTX_SETTINGS_MAX_BAND       8
+#define VTX_SETTINGS_MAX_BAND       7
 #define VTX_SETTINGS_MIN_CHANNEL    1
 #define VTX_SETTINGS_MAX_CHANNEL    8
 
