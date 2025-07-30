@@ -3866,7 +3866,7 @@ groups:
         table: vtx_frequency_groups
         min: 0
         max: 3
-        default_value: FREQUENCYGROUP_5G8
+        default_value: FREQUENCYGROUP_3G3
 
   - name: PG_PINIOBOX_CONFIG
     type: pinioBoxConfig_t

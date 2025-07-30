@@ -65,7 +65,7 @@ const char * const vtx58DefaultPowerNames[VTX_STRING_5G8_POWER_COUNT + 1] = {
     "---", "PL1", "PL2", "PL3", "PL4", "PL5"
 };
 
-const unit16_t vtx33frequencyTable[VTX_STRING_3G3_BAND_COUNT][VTX_STRING_3G3_CHAN_COUNT] = 
+const uint16_t vtx33frequencyTable[VTX_STRING_3G3_BAND_COUNT][VTX_STRING_3G3_CHAN_COUNT] = 
 {
     {3330, 3350, 3370, 3390, 3410, 3430, 3450, 3470}, // A
     {3170, 3190, 3210, 3230, 3250, 3270, 3290, 3310}, // B
@@ -81,7 +81,7 @@ const char * const vtx33ChannelNames[VTX_STRING_3G3_CHAN_COUNT + 1] = {
     "-", "1", "2", "3", "4", "5", "6", "7", "8",
 };
 
-const char vtx58BandLetter[VTX_STRING_3G3_BAND_COUNT + 1] = "-AB";
+const char vtx33BandLetter[VTX_STRING_3G3_BAND_COUNT + 1] = "-AB";
 
 const char * const vtx33DefaultPowerNames[VTX_STRING_3G3_POWER_COUNT + 1] = {
     "---", "PL1", "PL2", "PL3", "PL4"
