@@ -151,8 +151,10 @@
 #define UART7_RX_PIN            PE7
 
 #define USE_UART8
-#define UART8_TX_PIN            PE1
-#define UART8_RX_PIN            PE0
+//#define UART8_TX_PIN            PE1
+//#define UART8_RX_PIN            PE0
+#define UART8_TX_PIN            PD10 //replaced UART with initiation pcb
+#define UART8_RX_PIN            PD11 //replaced UART with initiation pcb
 
 #define USE_SOFTSERIAL1
 #define SOFTSERIAL_1_TX_PIN      PC6  //TX6 pad
@@ -191,8 +193,10 @@
 // *************** PINIO ***************************
 #define USE_PINIO
 #define USE_PINIOBOX
-#define PINIO1_PIN                  PD10  // VTX power switcher
-#define PINIO2_PIN                  PD11  // 2xCamera switcher
+//#define PINIO1_PIN                  PD10  // VTX power switcher
+//#define PINIO2_PIN                  PD11  // 2xCamera switcher
+#define PINIO1_PIN                  PE1  // used to be UART8
+#define PINIO2_PIN                  PE0  // used to be UART8
 
 // *************** LEDSTRIP ************************
 #define USE_LED_STRIP
